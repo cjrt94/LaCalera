@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="img/x-icon" href="imagenes/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicon.css">
+
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $(".cabecera").load('modulos/encabezado.html');
+          $(".pie").load('modulos/pie.html');
+
+          //hover categorias
+
+          var et;
+
+            $(".top-delay-recetas").hover(function() { 
+                et= $(this);
+
+                $(this).find(".delay-recetas").css('opacity', '1')
+                $(this).find(".delay-recetas").removeClass('zoomOut')
+                $(this).find(".delay-recetas").addClass('wow zoomIn')
+
+            }, function() {
+
+                $(this).find(".delay-recetas").removeClass('zoomIn')
+                $(this).find(".delay-recetas").addClass('wow zoomOut')                
+                $(this).find(".delay-recetas").css('opacity', '0')
+                  
+            });
+
+            
+
+
+      });
+
+
+
+    </script>
+
+
+<!-- navegacion vertical -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+       $(window).scroll(function() {
+          if ($(window).scrollTop() > 0) {
+            $('.topup').fadeIn();
+          } else{
+            $('.topup').fadeOut();
+          }
+        }); 
+
+        $("a.toplink").click(function() {
+          $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+          }, {
+            duration: 900,
+            easing: "swing"
+          });
+          return false;
+        });
+      });
+    </script>
+
+
+    <script src="js/queryloader2.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+    
+
+    <title>HUEVOS LA CALERA</title>
+  </head>
+  <body>
+
+<div class="topup">
+    <a href="#cabecera" class="toplink"><i class="fa fa-chevron-up"></i></a>
+  </div>
+<!--ENCABEZADO-->
+<div class="cabecera" id="cabecera"></div>
+<!--*********************-->
+
+<div class="container-fluid icono-down wow bounceInDown">
+  <div class="container">
+    <a href="#down" class="toplink"><i class="fa fa-chevron-down"></i></a>
+  </div>
+</div>
+
+<!--BANNER-->
+
+<section class="container-fluid banner-recetas-top wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">
+  <div class="container h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-12 col-lg-9 caja">
+          <img src="imagenes/ico-recetas-top.png">
+          <h1>DISFRUTA NUESTRAS RECETAS</h1>
+          <h2>DELICIAS PARA CUALQUIER HORA DEL DÍA</h2>
+        </div>
+      </div>  
+</section>
+
+<!--TOP -->
+
+<section class="container-fluid recetas-top" id="down">
+  <div class="container caja">
+
+    <div class="row buscador-recetas wow rotateInDownLeft" data-wow-delay="0.3s" data-wow-duration="0.5s">
+      <form class="form-inline w-100">
+        <input type="text" class="form-control" placeholder="">
+        <button type="submit" class="btn btn-primary">BUSCAR <i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+    <div class="row menu-recetas-top wow flipInX" data-wow-delay="0.6s">
+      <ul class="nav nav-fill w-100">
+        <li class="nav-item">
+          <a class="nav-link" href="#">DESAYUNO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ALMUERZO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CENA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">POSTRES</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="row platos-recetas-top">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3 wow flipInY" data-wow-delay="0.9s">
+        <div class="row">
+          <a href="" class="top-delay-recetas">
+            <div class="row align-items-center delay-recetas wow" data-wow-duration="0.3s">
+              <p>EMPANADA DE CARNE</p>
+            </div>
+            <img src="imagenes/almuerzo.png" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3 wow flipInY" data-wow-delay="0.9s">
+        <div class="row">
+          <a href="" class="top-delay-recetas">
+            <div class="row align-items-center delay-recetas wow" data-wow-duration="0.3s">
+              <p>EMPANADA DE CARNE</p>
+            </div>
+            <img src="imagenes/almuerzo.png" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3 wow flipInY" data-wow-delay="0.9s">
+        <div class="row">
+          <a href="" class="top-delay-recetas">
+            <div class="row align-items-center delay-recetas wow" data-wow-duration="0.3s">
+              <p>EMPANADA DE CARNE</p>
+            </div>
+            <img src="imagenes/almuerzo.png" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3 wow flipInY" data-wow-delay="0.9s">
+        <div class="row">
+          <a href="" class="top-delay-recetas">
+            <div class="row align-items-center delay-recetas wow" data-wow-duration="0.3s">
+              <p>EMPANADA DE CARNE</p>
+            </div>
+            <img src="imagenes/almuerzo.png" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row contenido">
+        <div class="col-sm-8 col-md-7 col-lg-7">
+          <h1>EMPANADA DE CARNE</h1>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-3 marcas">   
+          <ul>
+            <li><i class="glyphicon glyphicon-user"></i>10 Personas</li>
+            <li><i class="glyphicon glyphicon-time"></i>40 Minutos</li>
+            <li><i class="glyphicon glyphicon-scale"></i>0 Calorías</li>
+          </ul>
+        </div>
+  
+      <div class="col-lg-5 ingredientes">
+        <h2>INGREDIENTES</h2>
+        <ul>
+          <li>1k harina</li>
+          <li>1 cucharada mantequilla</li>
+          <li>1 huevo</li>
+          <li>1 cucharadita sal</li>
+          <li>2 cucharaditas de azúcar</li>
+          <li>1 cucharada de aceite</li>
+        </ul>
+        <br><br>
+      </div>
+      <div class="col-lg-7">
+        <h2>PREPARACIÓN</h2>
+        <p>Mezclen la harina con la sal y la mantequilla (con las manos) y cuando ya hayan mezclado la mantequilla hagan un pequeño orificio en el medio y agreguen el huevo y un poco de agua fría y mezclen con las manos hasta que este mas o menos homogénea (no va a estar como una masa de pizza.</p>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="row extras">
+      <div class="col-12">
+        <h3><a href=""><i class="glyphicon glyphicon-print"></i></a> | <a href=""><i class="fa fa-share-alt"></i></a></h3>
+      </div>
+    </div>
+
+  </div>  
+</section>
+
+
+
+
+
+<!--*********************-->
+
+<!--PIE-->
+<footer class="w-100 pie wow bounceInUp" data-wow-duration="1s"></footer>
+<!--*********************-->
+
+
+
+    
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/complementos.js"></script>
+  <script type="text/javascript" src="js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/ScrollMagic.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+  </body>
+
+  <script src="js/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</html>
