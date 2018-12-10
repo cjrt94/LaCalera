@@ -219,7 +219,7 @@
         mobile: true,
         live: true,
         callback: null,
-        scrollContainer: null,
+        scrollContainer: '.mdl-layout__content',
         resetAnimation: true
       };
 
