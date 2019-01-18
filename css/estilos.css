@@ -42,6 +42,10 @@ h5{
 	margin-bottom:.5rem;
 }
 
+.icono-down-h ul{
+	list-style: none;
+}
+
 .bg-verde{
 	background: #00913f;
 }
@@ -555,12 +559,10 @@ h5{
 /*:::::: FILOSOFIA :::::::*/
 
 .filosofia{
-	height: 100%;
-	background: #00913f;
+	height: 80%;
 	text-align: center;
-	background: url("../imagenes/bg-filosofia.jpg") no-repeat bottom center #00913f;
-	background-size: auto 100%;
-}
+	background: url("../imagenes/bg-filosofia.jpg")  no-repeat  #00913f;
+ }
 
 .filosofia h1{
 	font-family: cervo-light-1, cervo-light-2, arial;
@@ -813,13 +815,13 @@ h5{
 	border-radius: 5px 0 0 5px !important;
 	height: 45px;
 	outline: none;
-	border: 1px 0 1px 1px;
+	border: 1px 0px 1px 1px;
 	border-color: #00913f;
 }
 
 .buscador-recetas button{
 	width: 20% !important;
-	font-family: cervo-light-1, cervo-light-2, arial;
+	font-family: cervo-light-1, cervo-light-2, Arial;
 	font-size: 28px;
 	line-height: 24px;
 	border-radius: 0 5px 5px 0 !important;
@@ -968,7 +970,7 @@ h5{
 	position: absolute;
 	z-index: 2;
 	top: 0;
-	left: :0;
+	left:0;
 }
 
 /*:::::: TIPOGRAGÍAS :::::::*/
@@ -1486,4 +1488,10 @@ h5{
 	.padding-mapa{
 		padding-bottom: 350px;
 	}
+}
+
+.mapa {
+
+	height: auto;
+
 }
